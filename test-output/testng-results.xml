@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="89626" started-at="2020-02-01T14:25:05 GMT-03:00" finished-at="2020-02-01T14:26:34 GMT-03:00">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="89626" started-at="2020-02-01T14:25:05 GMT-03:00" finished-at="2020-02-01T14:26:34 GMT-03:00">
+      <class name="br.comr.rsinet.hub_TDD.Test.Adv_CriaConta">
+        <test-method status="PASS" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@ea1a8d5]" name="InicializaApp" is-config="true" duration-ms="21353" started-at="2020-02-01T14:25:05 GMT-03:00" finished-at="2020-02-01T14:25:26 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InicializaApp -->
+        <test-method status="PASS" signature="CriaContaComSuceso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@ea1a8d5]" name="CriaContaComSuceso" duration-ms="61652" started-at="2020-02-01T14:25:26 GMT-03:00" finished-at="2020-02-01T14:26:28 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CriaContaComSuceso -->
+        <test-method status="PASS" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@ea1a8d5]" name="fim" is-config="true" duration-ms="3099" started-at="2020-02-01T14:26:28 GMT-03:00" finished-at="2020-02-01T14:26:31 GMT-03:00">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CriaContaComSuceso status=SUCCESS method=Adv_CriaConta.CriaContaComSuceso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@ea1a8d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fim -->
+        <test-method status="PASS" signature="FalhaCriaConta()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@ea1a8d5]" name="FalhaCriaConta" duration-ms="1767" started-at="2020-02-01T14:26:31 GMT-03:00" finished-at="2020-02-01T14:26:33 GMT-03:00">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FalhaCriaConta -->
+        <test-method status="PASS" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@ea1a8d5]" name="fim" is-config="true" duration-ms="1730" started-at="2020-02-01T14:26:33 GMT-03:00" finished-at="2020-02-01T14:26:34 GMT-03:00">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FalhaCriaConta status=SUCCESS method=Adv_CriaConta.FalhaCriaConta()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@ea1a8d5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fim -->
+      </class> <!-- br.comr.rsinet.hub_TDD.Test.Adv_CriaConta -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
