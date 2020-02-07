@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome">
+      <class name="br.comr.rsinet.hub_TDD.Test.Adv_CriaConta">
         <methods>
           <include name="InicializaApp"/>
-          <include name="FiltrarNaoExiste"/>
-          <include name="fim"/>
+          <include name="criaContaComSuceso"/>
+          <include name="falhaCriaConta"/>
           <include name="report"/>
+          <include name="fim"/>
         </methods>
-      </class> <!-- br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome -->
+      </class> <!-- br.comr.rsinet.hub_TDD.Test.Adv_CriaConta -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

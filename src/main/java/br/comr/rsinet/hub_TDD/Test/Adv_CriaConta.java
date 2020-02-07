@@ -14,11 +14,6 @@ public class Adv_CriaConta extends Hooks {
 	private ExtentReports extent;
 	private ExtentTest test;
 	
-//	@BeforeTest
-//	public void Report() {		
-//		extent = Report.setReport("CadastrarUsuario_report");
-//	}
-
 	@Test
 	public void criaContaComSuceso() throws Exception {
 		test = Report.createTest("CadastrandoComSucesso");
@@ -26,9 +21,10 @@ public class Adv_CriaConta extends Hooks {
 		getCc().Menu();
 		getCc().Login();
 		getCc().NovaConta();
-		getCc().Usuario();
+		getCc().Usuario(6);
+		getCc().getUser();
 		getCc().Email();
-		getCc().Senha();
+		getCc().senha();
 		getCc().ConfirmarSenha();
 		getCc().PrimeiroNome();
 		getCc().UltimoNome();
@@ -39,7 +35,6 @@ public class Adv_CriaConta extends Hooks {
 		getCc().Endereco();
 		getCc().Cidade();
 		getCc().Cep();
-		getCc().descerPage();
 		getCc().Register();
 		getCc().Menu();
 		getCc().confirmaCadastro();
@@ -54,11 +49,22 @@ public class Adv_CriaConta extends Hooks {
 		getCc().Menu();
 		getCc().Login();
 		getCc().NovaConta();
-		getCc().Usuario();
+		getCc().Usuario(6);
+		getCc().getUser();
 		getCc().Email();
-		getCc().Senha();
-		getCc().confirmarSenhaErrada();
+		getCc().senha();
+		getCc().ConfirmarSenha();
 		getCc().PrimeiroNome();
+		getCc().UltimoNome();
+		getCc().descerPage();
+		getCc().fone();
+		getCc().pais();
+		getCc().Estado();
+		getCc().Endereco();
+		getCc().Cidade();
+		getCc().Cep();
+		getCc().Termos();
+		getCc().Register();
 		getCc().ConfirmarErro();
 		
 	}

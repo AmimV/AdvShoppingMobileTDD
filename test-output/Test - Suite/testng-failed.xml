@@ -3,14 +3,14 @@
 <suite name="Failed suite [Test - Suite]">
   <test thread-count="5" name="Tools Qa(failed)">
     <classes>
-      <class name="br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome">
+      <class name="br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa">
         <methods>
           <include name="InicializaApp"/>
-          <include name="FiltrarNaoExiste"/>
-          <include name="fim"/>
+          <include name="pesquisaProdutoInexistenteLupa"/>
           <include name="report"/>
+          <include name="fim"/>
         </methods>
-      </class> <!-- br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome -->
+      </class> <!-- br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa -->
     </classes>
   </test> <!-- Tools Qa(failed) -->
 </suite> <!-- Failed suite [Test - Suite] -->

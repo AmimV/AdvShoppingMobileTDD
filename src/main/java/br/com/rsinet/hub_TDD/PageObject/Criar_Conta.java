@@ -1,17 +1,20 @@
 package br.com.rsinet.hub_TDD.PageObject;
 
-import java.util.NoSuchElementException;
-import java.util.concurrent.TimeUnit;
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 
+import java.util.NoSuchElementException;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import br.com.rsinet.hub_TDD.Excel.MassaDeDadosNovaConta;
+import br.com.rsinet.hub_TDD.Utils.GeradorDeUsuario;
 import br.com.rsinet.hub_TDD.Utils.Rolagem;
 import io.appium.java_client.FindsByAndroidUIAutomator;
 import junit.framework.Assert;
@@ -21,6 +24,8 @@ public class Criar_Conta {
 	private WebDriverWait wait;
 	private MassaDeDadosNovaConta celula;
 	private Rolagem util;
+	private GeradorDeUsuario gerar;
+	private String teste;
 
 	public Criar_Conta(WebDriver driver) {
 		this.driver = driver;
@@ -28,9 +33,11 @@ public class Criar_Conta {
 		wait = new WebDriverWait(this.driver, 20);
 		celula = new MassaDeDadosNovaConta();
 		util = new Rolagem(driver);
+		gerar = new GeradorDeUsuario();
 	}
 
 	public void Menu() throws Exception {
+		Thread.sleep(2000);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement menu = driver.findElement(By.id("com.Advantage.aShopping:id/imageViewMenu"));
 		wait.until(ExpectedConditions.elementToBeClickable(menu));
@@ -49,13 +56,19 @@ public class Criar_Conta {
 		NovaConta.click();
 	}
 
-	public void Usuario() throws Exception {
+	public void Usuario(int quantidadeLetra) throws Exception {
+
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
 		WebElement userName = driver.findElement(By.xpath(
 				"//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.EditText"));
 		userName.click();
-		userName.sendKeys(celula.Usuario());
-
+		userName.sendKeys(gerar.gerador(5));
+	}
+	public void getUser() {
+		WebElement userName = driver.findElement(By.xpath(
+				"//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.EditText"));
+		teste = userName.getText();
 	}
 
 	public void Email() throws Exception {
@@ -65,7 +78,7 @@ public class Criar_Conta {
 		email.sendKeys(celula.Email());
 	}
 
-	public void Senha() throws Exception {
+	public void senha() throws Exception {
 		WebElement senha = driver.findElement(By.xpath(
 				"//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[3]/android.widget.RelativeLayout/android.widget.EditText"));
 		senha.click();
@@ -101,6 +114,7 @@ public class Criar_Conta {
 	}
 
 	public void fone() throws Exception {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		WebElement foneNumero = driver.findElement(By.xpath(
 				"//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText"));
 		foneNumero.click();
@@ -125,21 +139,29 @@ public class Criar_Conta {
 	}
 
 	public void Endereco() throws Exception {
-		WebElement endereco = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText"));
+		WebElement endereco = driver.findElement(By.xpath(
+				"//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.EditText"));
 		endereco.click();
 		endereco.sendKeys(celula.Endereco());
 	}
 
 	public void Cidade() throws Exception {
-		WebElement cidade = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText"));
+		WebElement cidade = driver.findElement(By.xpath(
+				"//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[1]/android.widget.EditText"));
 		cidade.click();
 		cidade.sendKeys(celula.Cidade());
 	}
 
 	public void Cep() throws Exception {
-		WebElement cep = driver.findElement(By.xpath("//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.EditText"));
+		WebElement cep = driver.findElement(By.xpath(
+				"//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.RelativeLayout[2]/android.widget.EditText"));
 		cep.click();
 		cep.sendKeys(celula.Cep());
+	}
+	public void Termos() throws Exception {
+		WebElement termos = driver.findElement(By.id(
+				"com.Advantage.aShopping:id/checkBoxAgreeConditions"));
+		termos.click();
 	}
 
 	public void Register() throws InterruptedException {
@@ -149,19 +171,13 @@ public class Criar_Conta {
 
 	public void confirmaCadastro() throws Exception {
 		WebElement usuarioLogado = driver.findElement(By.id("com.Advantage.aShopping:id/textViewMenuUser"));
-		Assert.assertEquals(usuarioLogado.getText(), celula.Usuario());
+		assertEquals(usuarioLogado.getText(), teste);
 	}
 
-	public void confirmarSenhaErrada() throws Exception {
-		WebElement confirmarSenha = driver.findElement(By.xpath(
-				"//android.view.ViewGroup[@content-desc=\"Home Page\"]/android.widget.LinearLayout[2]/android.widget.ScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout[4]/android.widget.RelativeLayout/android.widget.EditText"));
-		confirmarSenha.click();
-		confirmarSenha.sendKeys("teste");
-	}
 	public void ConfirmarErro() {
 
-		boolean kir = driver.getPageSource().contains("Passwords do not match");
-		Assert.assertTrue(kir);
+		boolean senhaErrada = driver.getPageSource().contains("REGISTER");
+		assertTrue(senhaErrada);
 
 	}
 }
