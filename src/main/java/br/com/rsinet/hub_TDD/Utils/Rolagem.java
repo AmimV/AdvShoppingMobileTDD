@@ -2,6 +2,7 @@ package br.com.rsinet.hub_TDD.Utils;
 
 import org.openqa.selenium.WebDriver;
 
+import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.PerformsTouchActions;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.offset.PointOption;
@@ -32,10 +33,14 @@ public class Rolagem {
 	}
 
 	public void RolarRegister() {
-		touch.press(PointOption.point(306, 1283))
-		  .moveTo(PointOption.point(283,575))
-		  .release()
-		  .perform(); 
+		touch.press(PointOption.point(306, 1283)).moveTo(PointOption.point(283, 575)).release().perform();
 	}
-	
+
+	public void procuraTexto(String celula) {
+		((FindsByAndroidUIAutomator) driver).findElementByAndroidUIAutomator(
+				"new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView(new UiSelector().textContains(\""
+						+ celula + "\").instance(0))")
+				.click();
+	}
+
 }
