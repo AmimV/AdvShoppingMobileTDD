@@ -68,8 +68,8 @@ public class PesquisarNaHome {
 		aplicar.click();
 	}
 	public void confirmaTest() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		boolean nenhumResults = driver.getPageSource().contains("No results");
+		WebElement oi = driver.findElement(By.id("com.Advantage.aShopping:id/textViewNoProductsToShow"));
+		boolean nenhumResults = wait.until(ExpectedConditions.textToBePresentInElement(oi, "No results"));
 		assertTrue(nenhumResults);
 	}
 	

@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="2" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-02-07T12:22:50 GMT-03:00" name="Test - Suite" finished-at="2020-02-07T12:25:27 GMT-03:00" duration-ms="156357">
+  <suite name="Test - Suite" duration-ms="178089" started-at="2020-02-12T20:45:45 GMT-03:00" finished-at="2020-02-12T20:48:43 GMT-03:00">
     <groups>
     </groups>
-    <test started-at="2020-02-07T12:22:50 GMT-03:00" name="Tools Qa" finished-at="2020-02-07T12:25:27 GMT-03:00" duration-ms="156357">
+    <test name="Tools Qa" duration-ms="178089" started-at="2020-02-12T20:45:45 GMT-03:00" finished-at="2020-02-12T20:48:43 GMT-03:00">
       <class name="br.comr.rsinet.hub_TDD.Test.Adv_CriaConta">
-        <test-method is-config="true" signature="report()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@2ea227af]" started-at="2020-02-07T12:22:50 GMT-03:00" name="report" finished-at="2020-02-07T12:22:50 GMT-03:00" duration-ms="108" status="PASS">
+        <test-method status="PASS" signature="report()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@30a3107a]" name="report" is-config="true" duration-ms="172" started-at="2020-02-12T20:45:45 GMT-03:00" finished-at="2020-02-12T20:45:45 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@2ea227af]" started-at="2020-02-07T12:22:50 GMT-03:00" name="InicializaApp" finished-at="2020-02-07T12:22:58 GMT-03:00" duration-ms="7323" status="PASS">
+        <test-method status="PASS" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@30a3107a]" name="InicializaApp" is-config="true" duration-ms="10830" started-at="2020-02-12T20:45:45 GMT-03:00" finished-at="2020-02-12T20:45:56 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InicializaApp -->
-        <test-method signature="criaContaComSuceso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@2ea227af]" started-at="2020-02-07T12:22:58 GMT-03:00" name="criaContaComSuceso" finished-at="2020-02-07T12:23:32 GMT-03:00" duration-ms="34083" status="PASS">
+        <test-method status="PASS" signature="criaContaComSuceso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@30a3107a]" name="criaContaComSuceso" duration-ms="37395" started-at="2020-02-12T20:45:56 GMT-03:00" finished-at="2020-02-12T20:46:33 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- criaContaComSuceso -->
-        <test-method is-config="true" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@2ea227af]" started-at="2020-02-07T12:23:32 GMT-03:00" name="fim" finished-at="2020-02-07T12:23:33 GMT-03:00" duration-ms="1609" status="PASS">
+        <test-method status="PASS" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@30a3107a]" name="fim" is-config="true" duration-ms="1611" started-at="2020-02-12T20:46:33 GMT-03:00" finished-at="2020-02-12T20:46:35 GMT-03:00">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=criaContaComSuceso status=SUCCESS method=Adv_CriaConta.criaContaComSuceso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@2ea227af] output={null}]]]>
+                <![CDATA[[TestResult name=criaContaComSuceso status=SUCCESS method=Adv_CriaConta.criaContaComSuceso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@30a3107a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fim -->
-        <test-method is-config="true" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@2ea227af]" started-at="2020-02-07T12:23:33 GMT-03:00" name="InicializaApp" finished-at="2020-02-07T12:23:41 GMT-03:00" duration-ms="7806" status="PASS">
+        <test-method status="PASS" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@30a3107a]" name="InicializaApp" is-config="true" duration-ms="10158" started-at="2020-02-12T20:46:35 GMT-03:00" finished-at="2020-02-12T20:46:45 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InicializaApp -->
-        <test-method signature="falhaCriaConta()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@2ea227af]" started-at="2020-02-07T12:23:41 GMT-03:00" name="falhaCriaConta" finished-at="2020-02-07T12:24:13 GMT-03:00" duration-ms="32252" status="PASS">
+        <test-method status="PASS" signature="falhaCriaConta()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@30a3107a]" name="falhaCriaConta" duration-ms="31945" started-at="2020-02-12T20:46:45 GMT-03:00" finished-at="2020-02-12T20:47:17 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- falhaCriaConta -->
-        <test-method is-config="true" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@2ea227af]" started-at="2020-02-07T12:24:13 GMT-03:00" name="fim" finished-at="2020-02-07T12:24:15 GMT-03:00" duration-ms="1144" status="PASS">
+        <test-method status="PASS" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@30a3107a]" name="fim" is-config="true" duration-ms="1022" started-at="2020-02-12T20:47:17 GMT-03:00" finished-at="2020-02-12T20:47:18 GMT-03:00">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=falhaCriaConta status=SUCCESS method=Adv_CriaConta.falhaCriaConta()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@2ea227af] output={null}]]]>
+                <![CDATA[[TestResult name=falhaCriaConta status=SUCCESS method=Adv_CriaConta.falhaCriaConta()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_CriaConta@30a3107a] output={null}]]]>
               </value>
             </param>
           </params>
@@ -51,38 +51,38 @@
         </test-method> <!-- fim -->
       </class> <!-- br.comr.rsinet.hub_TDD.Test.Adv_CriaConta -->
       <class name="br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa">
-        <test-method is-config="true" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@363ee3a2]" started-at="2020-02-07T12:24:54 GMT-03:00" name="InicializaApp" finished-at="2020-02-07T12:25:02 GMT-03:00" duration-ms="7665" status="PASS">
+        <test-method status="PASS" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@34c4973]" name="InicializaApp" is-config="true" duration-ms="9596" started-at="2020-02-12T20:48:06 GMT-03:00" finished-at="2020-02-12T20:48:16 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InicializaApp -->
-        <test-method signature="pesquisaProdutoInexistenteLupa()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@363ee3a2]" started-at="2020-02-07T12:25:02 GMT-03:00" name="pesquisaProdutoInexistenteLupa" finished-at="2020-02-07T12:25:06 GMT-03:00" duration-ms="4435" status="PASS">
+        <test-method status="PASS" signature="pesquisaProdutoInexistenteLupa()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@34c4973]" name="pesquisaProdutoInexistenteLupa" duration-ms="4198" started-at="2020-02-12T20:48:16 GMT-03:00" finished-at="2020-02-12T20:48:20 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pesquisaProdutoInexistenteLupa -->
-        <test-method is-config="true" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@363ee3a2]" started-at="2020-02-07T12:25:06 GMT-03:00" name="fim" finished-at="2020-02-07T12:25:07 GMT-03:00" duration-ms="985" status="PASS">
+        <test-method status="PASS" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@34c4973]" name="fim" is-config="true" duration-ms="896" started-at="2020-02-12T20:48:20 GMT-03:00" finished-at="2020-02-12T20:48:21 GMT-03:00">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pesquisaProdutoInexistenteLupa status=SUCCESS method=Adv_PesquisarNaLupa.pesquisaProdutoInexistenteLupa()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@363ee3a2] output={null}]]]>
+                <![CDATA[[TestResult name=pesquisaProdutoInexistenteLupa status=SUCCESS method=Adv_PesquisarNaLupa.pesquisaProdutoInexistenteLupa()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@34c4973] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fim -->
-        <test-method is-config="true" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@363ee3a2]" started-at="2020-02-07T12:25:07 GMT-03:00" name="InicializaApp" finished-at="2020-02-07T12:25:15 GMT-03:00" duration-ms="7889" status="PASS">
+        <test-method status="PASS" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@34c4973]" name="InicializaApp" is-config="true" duration-ms="9604" started-at="2020-02-12T20:48:21 GMT-03:00" finished-at="2020-02-12T20:48:31 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InicializaApp -->
-        <test-method signature="pesquisaProdutoPelaLupa()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@363ee3a2]" started-at="2020-02-07T12:25:15 GMT-03:00" name="pesquisaProdutoPelaLupa" finished-at="2020-02-07T12:25:25 GMT-03:00" duration-ms="9916" status="PASS">
+        <test-method status="PASS" signature="pesquisaProdutoPelaLupa()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@34c4973]" name="pesquisaProdutoPelaLupa" duration-ms="10974" started-at="2020-02-12T20:48:31 GMT-03:00" finished-at="2020-02-12T20:48:42 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pesquisaProdutoPelaLupa -->
-        <test-method is-config="true" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@363ee3a2]" started-at="2020-02-07T12:25:25 GMT-03:00" name="fim" finished-at="2020-02-07T12:25:27 GMT-03:00" duration-ms="1339" status="PASS">
+        <test-method status="PASS" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@34c4973]" name="fim" is-config="true" duration-ms="1150" started-at="2020-02-12T20:48:42 GMT-03:00" finished-at="2020-02-12T20:48:43 GMT-03:00">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pesquisaProdutoPelaLupa status=SUCCESS method=Adv_PesquisarNaLupa.pesquisaProdutoPelaLupa()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@363ee3a2] output={null}]]]>
+                <![CDATA[[TestResult name=pesquisaProdutoPelaLupa status=SUCCESS method=Adv_PesquisarNaLupa.pesquisaProdutoPelaLupa()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa@34c4973] output={null}]]]>
               </value>
             </param>
           </params>
@@ -91,38 +91,38 @@
         </test-method> <!-- fim -->
       </class> <!-- br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaLupa -->
       <class name="br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome">
-        <test-method is-config="true" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@4386f16]" started-at="2020-02-07T12:24:15 GMT-03:00" name="InicializaApp" finished-at="2020-02-07T12:24:23 GMT-03:00" duration-ms="8849" status="PASS">
+        <test-method status="PASS" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@33c7e1bb]" name="InicializaApp" is-config="true" duration-ms="9730" started-at="2020-02-12T20:47:18 GMT-03:00" finished-at="2020-02-12T20:47:28 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InicializaApp -->
-        <test-method signature="FiltrarNaoExiste()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@4386f16]" started-at="2020-02-07T12:24:23 GMT-03:00" name="FiltrarNaoExiste" finished-at="2020-02-07T12:24:37 GMT-03:00" duration-ms="13909" status="PASS">
+        <test-method status="PASS" signature="FiltrarNaoExiste()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@33c7e1bb]" name="FiltrarNaoExiste" duration-ms="17855" started-at="2020-02-12T20:47:28 GMT-03:00" finished-at="2020-02-12T20:47:45 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FiltrarNaoExiste -->
-        <test-method is-config="true" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@4386f16]" started-at="2020-02-07T12:24:37 GMT-03:00" name="fim" finished-at="2020-02-07T12:24:38 GMT-03:00" duration-ms="954" status="PASS">
+        <test-method status="PASS" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@33c7e1bb]" name="fim" is-config="true" duration-ms="978" started-at="2020-02-12T20:47:45 GMT-03:00" finished-at="2020-02-12T20:47:46 GMT-03:00">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FiltrarNaoExiste status=SUCCESS method=Adv_PesquisarNaHome.FiltrarNaoExiste()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@4386f16] output={null}]]]>
+                <![CDATA[[TestResult name=FiltrarNaoExiste status=SUCCESS method=Adv_PesquisarNaHome.FiltrarNaoExiste()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@33c7e1bb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fim -->
-        <test-method is-config="true" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@4386f16]" started-at="2020-02-07T12:24:38 GMT-03:00" name="InicializaApp" finished-at="2020-02-07T12:24:47 GMT-03:00" duration-ms="8674" status="PASS">
+        <test-method status="PASS" signature="InicializaApp()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@33c7e1bb]" name="InicializaApp" is-config="true" duration-ms="10036" started-at="2020-02-12T20:47:46 GMT-03:00" finished-at="2020-02-12T20:47:56 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- InicializaApp -->
-        <test-method signature="pesquisaTabletComSucesso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@4386f16]" started-at="2020-02-07T12:24:47 GMT-03:00" name="pesquisaTabletComSucesso" finished-at="2020-02-07T12:24:53 GMT-03:00" duration-ms="6231" status="PASS">
+        <test-method status="PASS" signature="pesquisaTabletComSucesso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@33c7e1bb]" name="pesquisaTabletComSucesso" duration-ms="8835" started-at="2020-02-12T20:47:56 GMT-03:00" finished-at="2020-02-12T20:48:05 GMT-03:00">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pesquisaTabletComSucesso -->
-        <test-method is-config="true" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@4386f16]" started-at="2020-02-07T12:24:53 GMT-03:00" name="fim" finished-at="2020-02-07T12:24:54 GMT-03:00" duration-ms="1156" status="PASS">
+        <test-method status="PASS" signature="fim(org.testng.ITestResult)[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@33c7e1bb]" name="fim" is-config="true" duration-ms="1059" started-at="2020-02-12T20:48:05 GMT-03:00" finished-at="2020-02-12T20:48:06 GMT-03:00">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=pesquisaTabletComSucesso status=SUCCESS method=Adv_PesquisarNaHome.pesquisaTabletComSucesso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@4386f16] output={null}]]]>
+                <![CDATA[[TestResult name=pesquisaTabletComSucesso status=SUCCESS method=Adv_PesquisarNaHome.pesquisaTabletComSucesso()[pri:0, instance:br.comr.rsinet.hub_TDD.Test.Adv_PesquisarNaHome@33c7e1bb] output={null}]]]>
               </value>
             </param>
           </params>

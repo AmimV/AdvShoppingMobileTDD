@@ -56,8 +56,8 @@ public class PesquisaPelaLupa {
 		lupa.click();
 	}
 	public void confirmarNenhumProduto() {
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		boolean nenhumProduto = driver.getPageSource().contains("No results");
+		WebElement oi = driver.findElement(By.id("com.Advantage.aShopping:id/textViewNoProductsToShow"));
+		boolean nenhumProduto = wait.until(ExpectedConditions.textToBePresentInElement(oi, "No results"));
 		assertTrue(nenhumProduto);
 	}
 }
